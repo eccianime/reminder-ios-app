@@ -20,7 +20,7 @@ class LoginBottomSheetView: UIView {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = Typography.subheading
-        label.text = "Entre para acessar suas receitas"
+        label.text = "login.label.title".localized
         label.textColor = Colors.gray100
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -29,7 +29,7 @@ class LoginBottomSheetView: UIView {
     private let emailLabel: UILabel = {
         let label = UILabel()
         label.font = Typography.label
-        label.text = "E-mail"
+        label.text = "login.email.title".localized
         label.textColor = Colors.gray100
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -42,7 +42,7 @@ class LoginBottomSheetView: UIView {
         textField.rightView = padding
         textField.leftViewMode = .always
         textField.rightViewMode = .always
-        textField.placeholder = "email@exemplo.com"
+        textField.placeholder = "login.email.placeholder".localized
         textField.backgroundColor = .white
         textField.borderStyle = .roundedRect
         textField.layer.cornerRadius = Metrics.tiny
@@ -55,7 +55,7 @@ class LoginBottomSheetView: UIView {
     private let passwordLabel: UILabel = {
         let label = UILabel()
         label.font = Typography.label
-        label.text = "Senha"
+        label.text = "login.password.title".localized
         label.textColor = Colors.gray100
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -81,7 +81,7 @@ class LoginBottomSheetView: UIView {
     private let loginButton: UIButton = {
         let button = UIButton()
         button.titleLabel?.font = Typography.subheading
-        button.setTitle("Entrar", for: .normal)
+        button.setTitle("login.button.title".localized, for: .normal)
         button.setTitleColor(Colors.white, for: .normal)
         button.backgroundColor = Colors.redBase
         button.layer.cornerRadius = 28
@@ -117,7 +117,7 @@ class LoginBottomSheetView: UIView {
         NSLayoutConstraint.activate([
             handleArea.topAnchor.constraint(equalTo: self.topAnchor, constant: Metrics.small),
             handleArea.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            handleArea.widthAnchor.constraint(equalToConstant: 100),
+            handleArea.widthAnchor.constraint(equalToConstant: 60),
             handleArea.heightAnchor.constraint(equalToConstant: 6),
             
             titleLabel.topAnchor.constraint(equalTo: handleArea.bottomAnchor, constant: Metrics.medium),

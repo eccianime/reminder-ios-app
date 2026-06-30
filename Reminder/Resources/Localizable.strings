@@ -1,0 +1,23 @@
+//
+//  Localizable.strings
+//  Reminder
+//
+//  Created by Jean Paul Rojas on 30/06/26.
+//
+
+/* MARK: - LOGIN SCREEN */
+"login.label.title" = "Entre para acessar suas receitas";
+
+"login.email.title" = "E-mail";
+"login.email.placeholder" = "email@exemplo.com";
+
+"login.password.title" = "Senha";
+
+"login.button.title" = "Entrar";
+
+/* MARK: - HOME SCREEN */
+
+/* MARK: - RECEIPTS SCREEN */
+
+/* MARK: - NEW RECEIPT SCREEN */
+
